@@ -16,3 +16,7 @@ body {
 body > * {
     width: 40%;
 }
+
+a:link, a:active, a:visited {
+    color: blue;
+}
