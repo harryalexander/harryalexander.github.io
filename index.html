@@ -11,7 +11,17 @@
 
         @font-face {
             font-family: "Roboto Mono Medium";
-            src: url("./static/fonts/RobotoMono-Medium");
+            src: url("./static/fonts/RobotoMono-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: "Public Sans Regular";
+            src: url("https://cdnjs.cloudflare.com/ajax/libs/uswds/2.1.0/fonts/public-sans/PublicSans-Regular.ttf")
+        }
+
+        @font-face {
+            font-family: "Public Sans Medium";
+            src: url("https://cdnjs.cloudflare.com/ajax/libs/uswds/2.1.0/fonts/public-sans/PublicSans-Medium.ttf")
         }
 
         html,
@@ -21,35 +31,58 @@
             width: 100%;
             height: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 0.95rem;
-            font-family: "Roboto Mono Normal", monospace;
+            font-family: "Public Sans Medium", monospace;
         }
 
-        body>div {
-            width: 50%;
+        a:link,
+        a:active,
+        a:visited {
+            color: blue
+        }
+
+        .nav_links_x_bio {
+            font-size: 1em;
+            width: 12%;
+            padding-top: 10px;
+            padding-left: 20px;
+            line-height: 5px;
+        }
+
+        .nav_links {
+            margin-top: 24px;
+        }
+
+        .content {
+            padding-top: 10px;
+            margin-left: 4%;
+            width: 33em;
+            text-align: justify;
+        }
+
+        .content h1 {
+            font-family: "Public Sans Medium";
+            font-size: 1em;
+            font-weight: inherit;
+            text-decoration: underline;
         }
     </style>
-
-    
 </head>
 
 <body>
-    <div>
-        <p>
-            { <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;"name": "Harry Alexander",<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;"about_me": "Mobile Engineer",<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;"email_address": "harialexandre@gmail.com",<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;"links": {<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"github": <a
-                href="https://github.com/harryalexander">https://github.com/harryalexander</a><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;},<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;"one_more_thing": <span class="rc-scout" style="display:inline-block"></span><br>
-            }
-        </p>
+    <div class="nav_links_x_bio">
+        <p>Harry Alexander</p>
+        <p>Mobile Engineer</p>
+        <div class="nav_links">
+            <p><a href="https://github.com/harryalexander">Github</a></p>
+            <p><a href="">Resume</a></p>
+            <p><a href="">Devlog</a></p>
+            <br>
+            <p><span class="rc-scout" style="line-height: 18px;"></span></p>
+        </div>
 
+    </div>
+    <div class="content">
     </div>
 
     <script async defer src="https://www.recurse-scout.com/loader.js?t=3b36b136050483f1c59d4e3ef118ced5"></script>
