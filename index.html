@@ -15,28 +15,26 @@
             }
         } */
 
+        @media (min-width: 640px) {
+            body {
+                width: 100%;
+            }
+        }
+
         :root {
             --link-color: blue;
         }
 
         html,
         body {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
             font-family: "Inter var", sans-serif;
             font-optical-sizing: auto;
             font-size: 1rem;
             font-weight: 500;
-            height: 100%;
+            height: auto;
             margin: 0;
             padding: 0;
-            text-align: justify;
             width: 100%;
-        }
-
-        body {
-            width: 90%;
         }
 
         a:link,
@@ -45,43 +43,51 @@
             color: var(--link-color);
         }
 
+        #content-container {
+            display: flex;
+            margin-left: 20px;
+            width: 53em;
+        }
+
         h1 {
             font-size: 1em;
             text-decoration: underline;
         }
 
         main {
-            margin-top: 20px;
-            width: 100%;
+            width: 33em;
         }
 
         nav {
-            width: 100%;
+            width: 20em;
+        }
+
+        nav > #links-container {
             margin-top: 20px;
         }
 
-        nav div {
-            margin-top: 0;
-            padding-top: 0;
+        .rc-scout-container {
+            margin-right: 20px;
+            margin-top: 10px;
+            text-align: end;
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <div><span class="rc-scout" style="line-height: 18px;"></span></div>
-        <br>
-        <div>Harry Alexander</div>
-        <div>Mobile Engineer &mdash; Currently doing Winter 2 batch at RC</div>
-        <br>
-        <div><a href="https://github.com/harryalexander">Github</a></div>
-    </nav>
-    <main>
-        <h1>What is Lorem Ipsum?</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-        </p>
-    </main>
-
+    <div class="rc-scout-container"><span class="rc-scout" style="line-height: 18px;"></span></div>
+    <div id="content-container">
+        <nav>
+            <div>Harry Alexander</div>
+            <div>Mobile Engineer &mdash; Currently doing Winter 2 batch at RC</div>
+            <div id="links-container"><a href="https://github.com/harryalexander">Github</a></div>
+        </nav>
+        <main>
+            <h1>What is Lorem Ipsum?</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            </p>
+        </main>
+    </div>
     <script async defer src="https://www.recurse-scout.com/loader.js?t=3b36b136050483f1c59d4e3ef118ced5"></script>
 </body>
 
