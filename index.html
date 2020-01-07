@@ -15,6 +15,10 @@
             }
         } */
 
+        :root {
+            --link-color: blue;
+        }
+
         html,
         body {
             margin: 0;
@@ -37,7 +41,7 @@
         a:link,
         a:active,
         a:visited {
-            color: blue
+            color: var(--link-color);
         }
 
         nav {
@@ -52,7 +56,6 @@
         }
         h1 {
             font-size: 1em;
-            font-variation-settings: "wght" 600;
             text-decoration: underline;
         }
     </style>
