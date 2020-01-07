@@ -2,26 +2,17 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Harry Alexander</title>
     <style>
-        @font-face {
-            font-family: "Roboto Mono Normal";
-            src: url("./static/fonts/RobotoMono-Regular.ttf");
-        }
+        @import url('https://rsms.me/inter/inter.css');
 
-        @font-face {
-            font-family: "Roboto Mono Medium";
-            src: url("./static/fonts/RobotoMono-Medium.ttf");
-        }
-
-        @font-face {
-            font-family: "Public Sans Regular";
-            src: url("https://cdnjs.cloudflare.com/ajax/libs/uswds/2.1.0/fonts/public-sans/PublicSans-Regular.ttf")
-        }
-
-        @font-face {
-            font-family: "Public Sans Medium";
-            src: url("https://cdnjs.cloudflare.com/ajax/libs/uswds/2.1.0/fonts/public-sans/PublicSans-Medium.ttf")
+        @supports (font-variation-settings: normal) {
+            html {
+                font-family: 'Inter var', sans-serif;
+                font-variation-settings: "wght" 500;
+            }
         }
 
         html,
@@ -31,8 +22,14 @@
             width: 100%;
             height: 100%;
             display: flex;
-            font-size: 0.95rem;
-            font-family: "Public Sans Regular", monospace;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        body {
+            width: 90%;
         }
 
         a:link,
@@ -41,50 +38,38 @@
             color: blue
         }
 
-        .nav_links_x_bio {
-            font-size: 1em;
-            width: 12%;
-            padding-top: 10px;
-            padding-left: 20px;
+        nav {
+            width: 100%;
+            margin-top: 20px;
             line-height: 5px;
         }
 
-        .nav_links {
-            margin-top: 24px;
+        main {
+            width: 100%;
         }
-
-        .content {
-            padding-top: 10px;
-            margin-left: 4%;
-            width: 33em;
-            text-align: justify;
-        }
-
-        .content h1 {
-            font-family: "Public Sans Medium";
+        h1 {
             font-size: 1em;
-            font-weight: inherit;
+            font-variation-settings: "wght" 600;
             text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <div class="nav_links_x_bio">
+    <nav>
+        <div><span class="rc-scout" style="line-height: 18px;"></span></div>
+        <br>
         <p>Harry Alexander</p>
         <p>Mobile Engineer</p>
-        <div class="nav_links">
-            <p><a href="https://github.com/harryalexander">Github</a></p>
-            <p><a href="">Resume</a></p>
-            <p><a href="">Devlog</a></p>
-            <br>
-            <p><span class="rc-scout" style="line-height: 18px;"></span></p>
-        </div>
-
-    </div>
-    <div class="content">
-    </div>
+        <p><a href="https://github.com/harryalexander">Github</a></p>
+    </nav>
+    <main>
+        <h1>What is Lorem Ipsum?</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </p>
+    </main>
 
     <script async defer src="https://www.recurse-scout.com/loader.js?t=3b36b136050483f1c59d4e3ef118ced5"></script>
 </body>
+
 </html>
